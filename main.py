@@ -1,5 +1,6 @@
-def sayHi():
-    print("Xin chào")
-if __name__ == "__main__":
-    sayHi() 
+import torch
+
+print("Welcome the MyClip project.")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print('Use device: ',device)
     
